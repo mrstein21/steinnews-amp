@@ -1,0 +1,117 @@
+
+body {
+    font-family: Langar;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap);
+  }
+.news-detail{
+  margin-top: 20px;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.main{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+ header {
+    background: Tomato;
+    color: white;
+    height: 50px;
+    font-size: 2em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    text-align: center;
+  }
+
+ .news {
+    display:flex
+  }
+  
+  .news-info{
+    margin-left: 5px;
+  }
+
+  .news-title{
+    font-size: 20px;
+    color: #000;
+    margin-top: 5px;
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+
+  .loadmore {
+    margin-top: 10px;
+    background: tomato;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .news-short-desc{
+    font-family: 'Roboto';
+    margin-top: 5px;
+    color: #3e3939;
+  }
+
+  .news-date{
+    font-family: 'Roboto';
+    margin-top: 5px;
+    color: #3e3939;
+  }
+
+  .news-detail-title{
+    font-family: 'Roboto';
+    font-size: 25px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #111;
+  }
+
+  .news-detail-date{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #111;
+  }
+
+  .news-detail-content{
+    margin-top: 20px;
+    font-family: 'Roboto';
+  }
+
+  @media screen and (max-width: 870px) {
+    .news-detail{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  .news-date{
+    font-family: 'Roboto';
+    margin-top: 5px;
+    color: #3e3939;
+  }
+
+  amp-list div[role='list'] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
