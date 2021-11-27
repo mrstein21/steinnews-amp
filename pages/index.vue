@@ -48,7 +48,6 @@ export default {
       rejectUnauthorized: false
     }); 
     return new Promise((resolve,reject)=>{
-      console.log(process.env.API_URL);
       var pageNumber=context.query.page ? context.query.page : 1
       axios.get(process.env.API_URL+"/articles?page="+pageNumber,{
         httpsAgent: agent
